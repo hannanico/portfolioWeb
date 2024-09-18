@@ -27,7 +27,9 @@ SECRET_KEY = 'django-insecure-onwf4v3*%hzly%wikq$epj!5=_6e$_v(@!9ig1jfzl7a-8*4$c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'www.hnicolas.dev',
+]
 
 
 # Application definition
