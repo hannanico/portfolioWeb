@@ -1,5 +1,5 @@
 function updateTime() {
-    const timeElement = document.getElementById('current-time');
+    const timeElement = document.getElementById('current_time');
     const now = new Date();  // Get current time from client-side
     const formattedTime = 
         String(now.getHours()).padStart(2, '0') + ':' + 
