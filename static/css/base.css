@@ -1,8 +1,28 @@
-#page-top {
-    background-color: #141514;
+:root {
+    --gray_background: #141514;
+    --guwon_font: 'Guwon batang', serif;
 }
 
-.custom_font{
-    font-family: 'Gowun Batang', serif;
+html{
+    font-family: 'Guwon batang', serif;
     font-weight: 400;
+}
+
+body {
+    background-color: var(--gray_background);
+    font-family: 'Guwon batang', serif;
+    font-weight: 400;
+}
+
+.social_btn,
+.contact_btn {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.social_btn:hover,
+.contact_btn:hover {
+    font-weight: 800;
+    background-color: #858796;
+    color: var(--gray_background);
 }

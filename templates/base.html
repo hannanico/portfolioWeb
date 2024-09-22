@@ -15,6 +15,7 @@
 
     <link rel="icon" type="image/png" href="{% static 'img/favicon.ico' %}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -33,23 +34,71 @@
 
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <span class="navbar_time mt-1 h5">
-                <p id="current_time"> <i class="fa-regular fa-clock" style="color: #ffffff;"></i> {{current_time|time:"H:i"}}</p>
+            <span class="navbar_social h5">
+                <button type="button" data-toggle="modal" data-target="#social_modal" class="social_btn btn"><h5 class="social_title m-0">Social media</h5></button>
+                <div class="modal fade" id="social_modal" tabindex="-1" role="dialog" aria-labelledby="social_modal_title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="social_modal_long_title">Social media</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="github_info">
+                                <p class="github_title"><i class="fa-brands fa-github"></i> Github: <a href="https://github.com/hannanico"> Github.com/hannanico</a></p>
+                            </div>
+                            <div class="linkedin_info">
+                                <p class="linkedin_title mb-0"><i class="fa-brands fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/hanna-nicolas-88466023a/"> Linkedin.com/hannanico</a></p>
+                            </div>               
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </span>
-            <span class="navbar_title mt-1 h5">
-                <h1 class="custom_font">Hanna Nicolas</h1>
+            <span class="navbar_title h5">
+                <h1 class="main_title mb-0">Hanna Nicolas</h1>
+                <p class="text-center m-0" ><i class="fa-solid fa-globe"></i> <span id="current_time">{{current_time|time:"H:i"}}</span></p>
             </span>
-            <span class="navbar_contact mt-1 h5">
-                <button type="button" class="btn btn-outline-light">Contact me</button>
+            <span class="navbar_contact h5">
+                <button type="button" data-toggle="modal" data-target="#contact_modal" class="contact_btn btn" ><h5 class="contact_title m-0">Contact me</h5></button>
+                <div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-labelledby="contact_modal_title" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="contact_modal_long_title">Contact information</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="email_info">
+                                <p>Email: hannanicolasca@gmail.com</p>
+                            </div>
+                            <div class="phone_info">
+                                <p>Phone: +1(519)403-9508</p>
+                            </div>                  
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </span>
         </div>
-      </nav>
-
-    
+    </nav>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
