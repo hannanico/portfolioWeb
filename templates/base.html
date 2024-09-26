@@ -32,67 +32,75 @@
 
 <body id="page-top">
 
+  <header class="d-flex p-4 justify-content-between align-items-center">
+    <div class="title h5">
+        <h1 class="main_title mb-0">Hanna Nicolas</h1>
+        <p class="text-center m-0"><i class="fa-solid fa-globe"></i> <span id="current_time">{{current_time|time:"H:i"}}</span></p>
+    </div>
     <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-            <span class="navbar_social h5">
-                <button type="button" data-toggle="modal" data-target="#social_modal" class="social_btn btn"><h5 class="social_title m-0">Social media</h5></button>
+        <div class="container-fluid d-flex align-items-center justify-content-end">
+            <span class="navbar_social h5 me-3">
+                <button type="button" data-toggle="modal" data-target="#social_modal" class="social_btn btn">
+                    <h5 class="social_title m-0">Social media</h5>
+                </button>
+                <!-- Social Modal -->
                 <div class="modal fade" id="social_modal" tabindex="-1" role="dialog" aria-labelledby="social_modal_title" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="social_modal_long_title">Social media</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="github_info">
-                                <p class="github_title"><i class="fa-brands fa-github"></i> Github: <a href="https://github.com/hannanico"> Github.com/hannanico</a></p>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="social_modal_long_title">Social media</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div class="linkedin_info">
-                                <p class="linkedin_title mb-0"><i class="fa-brands fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/hanna-nicolas-88466023a/"> Linkedin.com/hannanico</a></p>
-                            </div>               
+                            <div class="modal-body">
+                                <div class="github_info">
+                                    <p class="github_title"><i class="fa-brands fa-github"></i> Github: <a href="https://github.com/hannanico"> Github.com/hannanico</a></p>
+                                </div>
+                                <div class="linkedin_info">
+                                    <p class="linkedin_title mb-0"><i class="fa-brands fa-linkedin"></i> Linkedin: <a href="https://www.linkedin.com/in/hanna-nicolas-88466023a/"> Linkedin.com/hannanico</a></p>
+                                </div>               
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
-            </span>
-            <span class="navbar_title h5">
-                <h1 class="main_title mb-0">Hanna Nicolas</h1>
-                <p class="text-center m-0" ><i class="fa-solid fa-globe"></i> <span id="current_time">{{current_time|time:"H:i"}}</span></p>
+                </div>
             </span>
             <span class="navbar_contact h5">
-                <button type="button" data-toggle="modal" data-target="#contact_modal" class="contact_btn btn" ><h5 class="contact_title m-0">Contact me</h5></button>
+                <button type="button" data-toggle="modal" data-target="#contact_modal" class="contact_btn btn">
+                    <h5 class="contact_title m-0">Contact me</h5>
+                </button>
+                <!-- Contact Modal -->
                 <div class="modal fade" id="contact_modal" tabindex="-1" role="dialog" aria-labelledby="contact_modal_title" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="contact_modal_long_title">Contact information</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="email_info">
-                                <p>Email: hannanicolasca@gmail.com</p>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="contact_modal_long_title">Contact information</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
-                            <div class="phone_info">
-                                <p>Phone: +1(519)403-9508</p>
-                            </div>                  
+                            <div class="modal-body">
+                                <div class="email_info">
+                                    <p>Email: hannanicolasca@gmail.com</p>
+                                </div>
+                                <div class="phone_info">
+                                    <p>Phone: +1(519)403-9508</p>
+                                </div>                  
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </span>
         </div>
     </nav>
-
+</header>
+    
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
